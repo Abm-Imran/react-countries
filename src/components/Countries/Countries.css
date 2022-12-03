@@ -1,0 +1,16 @@
+.country-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.country-list{
+    background-color: rgb(210, 128, 128);
+}
+.country-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.country-list .active{
+    color: royalblue;
+}

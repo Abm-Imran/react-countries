@@ -1,13 +1,14 @@
-.nav-bar{
+
+.nav-bar {
     height: 80px;
-    background: black; 
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
 
-.nav-bar a{
+.nav-bar a {
     color: white;
     text-decoration: none;
     margin-left: 40px;
@@ -19,6 +20,6 @@
     color: darkgreen;
 } */
 
-.nav-bar .active{
+.nav-bar .active {
     color: orangered;
 }
