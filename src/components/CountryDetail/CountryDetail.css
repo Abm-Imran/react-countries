@@ -1,0 +1,16 @@
+.country-details-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.country-img{
+    margin: auto 0;
+}
+.details-info{
+    text-align: left;
+}
+.details-info img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: -15px;
+}

@@ -2,12 +2,12 @@ import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import './Countries.css'
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
-    console.log(countries);
+    // console.log(countries);
 
     useEffect(() => {
         const url = 'https://restcountries.com/v3.1/all';
@@ -21,10 +21,10 @@ const Countries = () => {
                 {
                     countries.map(country => <div>
                         <NavLink
-                        title={country.name.common}
+                            title={country.name.common}
                             key={country.name.common}
-                            to={'countries/' + country.name.common}
-                        > {country.name.common.length >25 ? country.name.common.slice(0, 25)+'...' : (country.name.common)} </NavLink>
+                            to={'/countries/' + country.name.common}
+                        > {country.name.common.length > 20 ? country.name.common.slice(0, 20) + '...' : (country.name.common)} </NavLink>
                     </div>)
                     // Method 1....{country.name.common.length >20 ? country.name.common.slice(0,20)+'...' : (country.name.common)}
                     // Method 2....{country.name.common.slice(0,20)+'...'} 
@@ -33,7 +33,7 @@ const Countries = () => {
             </div>
             <div className="country-details">
                 <div className="display-country-details">
-
+                    <Outlet></Outlet>
                 </div>
             </div>
         </div>

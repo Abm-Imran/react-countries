@@ -1,4 +1,7 @@
-
+.nav-container{
+    position: sticky;
+    top: 0;
+}
 .nav-bar {
     height: 80px;
     background: black;

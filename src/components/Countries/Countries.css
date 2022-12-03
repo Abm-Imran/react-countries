@@ -1,16 +1,28 @@
-.country-container{
+.country-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
-.country-list{
-    background-color: rgb(210, 128, 128);
+
+.country-list {
+    background-color: rgb(211, 155, 155);
 }
-.country-list a{
+
+.country-list a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 20px;
     padding-left: 20px;
 }
-.country-list .active{
-    color: royalblue;
+
+.country-list .active {
+    color: whitesmoke;
+}
+
+.country-details {
+    background-color: rgb(187, 179, 179);
+}
+
+.display-country-details {
+    position: sticky;
+    top: 102px;
 }
